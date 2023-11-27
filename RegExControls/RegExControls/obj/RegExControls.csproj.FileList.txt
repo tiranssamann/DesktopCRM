@@ -1,0 +1,14 @@
+obj\Release\ResolveAssemblyReference.cache
+bin\Release\RegExControls.dll
+bin\Release\RegExControls.pdb
+obj\Release\RegExControls.dll
+obj\Release\RegExControls.pdb
+bin\Debug\RegExControls.dll
+bin\Debug\RegExControls.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RegExControls.dll
+obj\Debug\RegExControls.pdb
+obj\Release\RegExControls.RegExTextBox.resources
+obj\Release\RegExControls.csproj.GenerateResource.Cache
+obj\Debug\RegExControls.RegExTextBox.resources
+obj\Debug\RegExControls.csproj.GenerateResource.Cache

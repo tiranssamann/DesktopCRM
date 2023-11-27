@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExControls", "RegExControls\RegExControls.csproj", "{D0D52F14-24A2-4C53-A7B9-B5626DC1AF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRegExControls", "TestRegExControls\TestRegExControls.csproj", "{FC636890-B5A8-43E0-A29E-921E67C81ABA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0D52F14-24A2-4C53-A7B9-B5626DC1AF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D52F14-24A2-4C53-A7B9-B5626DC1AF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D52F14-24A2-4C53-A7B9-B5626DC1AF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D52F14-24A2-4C53-A7B9-B5626DC1AF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC636890-B5A8-43E0-A29E-921E67C81ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC636890-B5A8-43E0-A29E-921E67C81ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC636890-B5A8-43E0-A29E-921E67C81ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC636890-B5A8-43E0-A29E-921E67C81ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

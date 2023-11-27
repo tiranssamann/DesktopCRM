@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9996A59B-A06E-4AAD-95B0-7706B87CBFE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StartUp</RootNamespace>
+    <AssemblyName>StartUp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Бронирование и продажи\ComingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Бронирование и продажи\ComingListForm.Designer.cs">
+      <DependentUpon>ComingListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Бронирование и продажи\ComingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Бронирование и продажи\ComingPage.Designer.cs">
+      <DependentUpon>ComingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Бронирование и продажи\NewComingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Бронирование и продажи\NewComingForm.Designer.cs">
+      <DependentUpon>NewComingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragentADDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragentADDForm.Designer.cs">
+      <DependentUpon>ContragentADDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragenteditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragenteditForm.Designer.cs">
+      <DependentUpon>ContragenteditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Клиентская база CRM\ContragentsForm.Designer.cs">
+      <DependentUpon>ContragentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Модель базы данных\ComingDrugs.cs" />
+    <Compile Include="Модель базы данных\Contracts.cs" />
+    <Compile Include="Модель базы данных\Contragent.cs" />
+    <Compile Include="Модель базы данных\CRMContext.cs" />
+    <Compile Include="Модель базы данных\Drugs.cs" />
+    <Compile Include="Модель базы данных\DrugsToSale.cs" />
+    <Compile Include="Модель базы данных\Employee.cs" />
+    <Compile Include="Модель базы данных\GenericRepository.cs" />
+    <Compile Include="Модель базы данных\ReleaseDrugs.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Бронирование и продажи\ComingListForm.resx">
+      <DependentUpon>ComingListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Бронирование и продажи\ComingPage.resx">
+      <DependentUpon>ComingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Бронирование и продажи\NewComingForm.resx">
+      <DependentUpon>NewComingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Клиентская база CRM\ContragentADDForm.resx">
+      <DependentUpon>ContragentADDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Клиентская база CRM\ContragenteditForm.resx">
+      <DependentUpon>ContragenteditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Клиентская база CRM\ContragentsForm.resx">
+      <DependentUpon>ContragentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Управление персоналом\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RegExControls\RegExControls\RegExControls.csproj">
+      <Project>{d0d52f14-24a2-4c53-a7b9-b5626dc1af23}</Project>
+      <Name>RegExControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\ico_xls_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_Asset_85_3298601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\imgonline-com-ua-Resize-Zii6quYs9V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Ip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Opcii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Otchet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\otchet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\otchet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\search16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
